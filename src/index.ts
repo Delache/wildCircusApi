@@ -1,7 +1,7 @@
-
 import express from 'express';
 import loaders from './loaders';
 
+import { RepresentationController } from './controller/representation.controller';
 import { UserController } from './controller/user.controller';
 import { AuthController } from './controller/auth.controller';
 import { DocumentController } from './controller/document.controller';
@@ -17,7 +17,8 @@ async function startServer() {
   UserController(app);
   AuthController(app);
   DocumentController(app);
-  PriceController(app );
+  PriceController(app);
+  RepresentationController(app);
 
   // Démarrage du serveur une fois que tout est correctement init
   app.listen(3000, () => console.log('Express server is running'));

@@ -1,4 +1,3 @@
-
 export class Price {
 
     public id!: number;
