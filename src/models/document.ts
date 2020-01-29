@@ -1,7 +1,3 @@
-/**
- * Cette classe est un modèle
- * Elle représente la forme de l'objet Document (documents)
- */
 export class Document {
 
     public id!: number;

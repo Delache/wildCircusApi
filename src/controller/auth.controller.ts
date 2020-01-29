@@ -3,9 +3,6 @@ import express, { Router, Request, Response, Application, response } from 'expre
 import { User } from 'src/models/user';
 import { env } from '../core/environnement';
 
-// Le controller vous servira à réceptionner les requêtes associées aux utilisateurs
-// @param app l'application express
-
 export const AuthController = (app: Application) => {
     const authService = new AuthService();
     const authRouter: Router = express.Router();
