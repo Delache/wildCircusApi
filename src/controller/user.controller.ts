@@ -24,5 +24,5 @@ export const UserController = (app: Application) => {
         res.send(user);
     });
     userRouter = commonController(app, service, userRouter);
-    app.use('/user', userRouter);
+    app.use('/users', userRouter);
 };
