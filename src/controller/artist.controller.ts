@@ -46,5 +46,5 @@ export const ArtistController = (app: Application) => {
   });
 
   router = commonController(app, service, router);
-  app.use('/artist', router);
+  app.use('/artists', router);
 };
